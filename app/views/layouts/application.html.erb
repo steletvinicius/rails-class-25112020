@@ -8,7 +8,12 @@
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
+  <div style='background-color: lightgreen; padding: 8px;'>
+    <h1>Futebol blog</h1>
+    <%= link_to 'Contact', contact_path %>
+    <%= link_to 'About', about_path %>
+    <%= link_to 'Home', root_path %>
+  </div>
   <body>
     <%= yield %>
   </body>
